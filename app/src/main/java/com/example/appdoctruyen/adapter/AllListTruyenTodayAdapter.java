@@ -80,6 +80,7 @@ public class AllListTruyenTodayAdapter extends ArrayAdapter<AllListTruyenToday> 
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(context, GioiThieuTruyenActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     context.startActivity(intent);
                 }
             });
